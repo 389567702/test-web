@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>浏览器定位</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css" />
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=9785641385ae0598f5f34dfc142d6f5b"></script>
+    <!-- <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script> -->
+
+    <style type="text/css">
+        #tip {
+            right: 200px
+        }
+
+        #panel {
+            position: fixed;
+            background-color: white;
+            max-height: 90%;
+            overflow-y: auto;
+            top: 100px;
+            right: 10px;
+            width: 280px;
+        }
+    </style>
+
+    <body>
+        <div id='container'></div>
+        <!-- <div id="panel"></div> -->
+        <div id="tip"></div>
+        <div id="myPageTop">
+            <table>
+                <tr>
+                    <td>
+                        <label>搜索导航：</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="tipinput" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="panel"></div>
+
+        <script src="map.js"></script>
+    </body>
+
+</html>
